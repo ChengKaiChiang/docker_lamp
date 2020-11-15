@@ -1,0 +1,20 @@
+[
+  {
+    "identify": "4E4655",
+    "device_model": "2036",
+    "vendor_class_id": "2021",
+    "vendor_model_id": "2021",
+    "vendor_id": "202026",
+    "product_id": "20202021",
+    "serial_num": "2020202021",
+    "firmware_ver": "21",
+    "device_model_engname": "i_Node",
+    "device_model_chtname": "i_Node",
+    "product_engname": "KANS-200",
+    "product_chtname": "刮鈑式切屑濾淨系統",
+    "vendor_engname": "KEYARROW",
+    "vendor_chtname": "台灣引興",
+    "vendor_model_name": "排屑機",
+    "vendor_class_name": "工具機"
+  }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "BoardID": "4E46552036202120202620202021202020202121",
+        "wifiSSID": "test",
+        "wifiPassword": "test",
+        "brokerIP": "140.130.35.239",
+        "brokerPort": "1883",
+        "brokerQos": "0",
+        "sensorData": [
+            {
+                "sensorName": "temperature",
+                "sensorID": "25",
+                "caption": "T0"
+            },
+            {
+                "sensorName": "Humidity",
+                "sensorID": "2F",
+                "caption": "H0"
+            }
+        ]
+    }
+]

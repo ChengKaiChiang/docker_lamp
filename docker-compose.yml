@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+
+  web:
+    image: lamp_web:final
+    restart: always
+    privileged: true
+    command: ["sbin/init" ]
+    ports:
+      - "80:80"
+      - "443:443"
+      - "22:22"
+    volumes:
+      - ./apache/www:/var/www/html
+    links:
+      - "mysql"
+
+  mysql:
+    build: mysql/
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_HOST: 127.0.0.1:3306
+      MYSQL_USER: root
+  
+  phpmyadmin:
+    build: phpmyadmin/
+    ports:
+      - "8080:80"
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    volumes:
+      - ./phpmyadmin/upload.ini:/usr/local/etc/php/php.ini
