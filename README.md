@@ -1,3 +1,11 @@
 # docker_lamp
-1. First go to https://zws.im/‍‌‌‌‌‌‌‍‍‍‌‌‌‌‍‌‍ to download the webserver.zip file to the local side
-2. Enter the command "docker import – lamp_web:final <webserver.zip" in the terminal
+
+# Version
+PHP: 7.4.15
+MySQL: 8.0.19
+phpMyadmin: 5.0.2
+
+# Instruction
+Start: docker-compose up -d
+Stop: docker-compose stop
+Uninstall: docker-compose down
